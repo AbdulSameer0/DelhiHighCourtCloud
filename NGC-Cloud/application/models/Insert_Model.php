@@ -9,7 +9,7 @@ $data=array(
 			'ContactNumber'=>$cntno,
 			'Address'=>$adrss
 		);
-$sql_query=$this->db->insert('tblusers',$data);
+$sql_query=$this->db->insert('cloud_data',$data);
 if($sql_query){
 $this->session->set_flashdata('success', 'Registration successful');
 		redirect('read');
@@ -31,7 +31,7 @@ $data=array(
 		);
 
 $sql_query=$this->db->where('id', $usid)
-                ->update('tblusers', $data); 
+                ->update('cloud_data', $data); 
            if($sql_query){
 $this->session->set_flashdata('success', 'Record updated successful');
 		redirect('read');
