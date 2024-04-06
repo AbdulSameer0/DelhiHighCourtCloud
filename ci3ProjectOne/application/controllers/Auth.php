@@ -12,8 +12,9 @@ class Auth extends CI_Controller {
         }
         public function index()
         {
-          $this->load->view('home_page');
-        // echo "<center><h1>Welcome to our homepage...</h1></center>";
+        //   $this->load->view('home_page');
+            $this->load->view('welcomehome');
+        
             }   
     
         public function signin()

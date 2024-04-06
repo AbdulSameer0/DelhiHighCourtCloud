@@ -54,7 +54,7 @@
 
         <div class="text-end">
           <button type="submit" class="btn btn-outline-light me-2">Search</button>
-          <a href="<?php echo base_url();?>Auth/signin"><button type="submit" class="btn btn-outline-light me-2">Sign-in</button></a>
+          <a href=""><button type="submit" class="btn btn-outline-light me-2">Sign-in</button></a>
           <a href="<?php echo base_url();?>Auth/signup"><button type="submit" class="btn btn-warning">Sign-up</button></a>           
         </div>
       </div>

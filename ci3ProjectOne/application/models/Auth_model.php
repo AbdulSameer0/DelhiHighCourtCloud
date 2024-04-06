@@ -27,7 +27,7 @@ class Auth_model extends CI_Model {
                             'email'=>$this->input->post('email'),
                             'password'=>$password,
                                 );
-               $this->db->insert('signinfo',$data);
+               $this->db->insert('singin_info',$data);
                $this->session->set_flashdata('success', 'Signup Successfully!');
                redirect('Auth/signup');
            }
@@ -41,7 +41,7 @@ class Auth_model extends CI_Model {
         $password=$this->input->post('password');
         $this->db->where('email',$email);
         $this->db->where('password',$password);
-        $query=$this->db->get('signinfo');
+        $query=$this->db->get('singin_info');
         $find_user=$query->num_rows($query);
 
         if($find_user>0){
