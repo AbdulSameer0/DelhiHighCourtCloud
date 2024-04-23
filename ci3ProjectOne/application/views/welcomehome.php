@@ -28,7 +28,7 @@
   <!--header-->
   <header class="main-header clearfix" role="header">
     <div class="logo">
-      <a href="#"><em>Grad</em> School</a>
+      <a href="#"><em>Grad</em>.</a>
     </div>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
@@ -39,13 +39,13 @@
             <li><a href="#section2">Who we are?</a></li>
             <li><a href="#section3">What we do?</a></li>
             <li><a href="#section3">How it works?</a></li>
-            <li><a href="https://templatemo.com/about" rel="sponsored" class="external">External URL</a></li>
+            <li><a href="#section4" rel="sponsored" class="external">External URL</a></li>
           </ul>
         </li>
         <li><a href="#section4">Courses</a></li>
         <!-- <li><a href="#section5">Video</a></li> -->
         <li><a href="#section6">Contact</a></li>
-        <li><a href="https://templatemo.com" class="external">External</a></li>
+        <li><a href="#" class="external">External</a></li>
       </ul>
     </nav>
   </header>
@@ -81,7 +81,7 @@
               <div class="content-hide">
                 <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
                 <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
-                <div class="scroll-to-section"><a href="#section2">More Info.</a></div>
+                <div><a href="<?php echo base_url();?>AllCourses/index" type="click" target="_blank">More Info.</a></div>
             </div>
             </div>
           </div>
@@ -95,7 +95,7 @@
               <div class="content-hide">
                 <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
                 <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
-                <div class="scroll-to-section"><a href="#section3">Details</a></div>
+                <div><a href="<?php echo base_url();?>FreshAddmission/index" type="click" target="_blank">click here</a></div>
             </div>
             </div>
           </div>
@@ -109,7 +109,7 @@
               <div class="content-hide">
                 <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
                 <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
-                <div class="scroll-to-section"><a href="#section3">Details</a></div>
+                <div><a href="<?php echo base_url();?>VirtualClass/index" type="click" target="_blank">Details</a></div>
             </div>
             </div>
           </div>
@@ -124,7 +124,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>Why choose Grad School?</h2>
+            <h2>Why choose Grad ?</h2>
           </div>
         </div>
         <div class="col-md-12">
@@ -176,80 +176,14 @@
     </div>
   </section>
 
-  <section class="section coming-soon" data-section="section3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7 col-xs-12">
-          <div class="continer centerIt">
-            <div>
-              <h4>Take <em>any online course</em> and win $326 for your next class</h4>
-              <div class="counter">
-
-                <div class="days">
-                  <div class="value">00</div>
-                  <span>Days</span>
-                </div>
-
-                <div class="hours">
-                  <div class="value">00</div>
-                  <span>Hours</span>
-                </div>
-
-                <div class="minutes">
-                  <div class="value">00</div>
-                  <span>Minutes</span>
-                </div>
-
-                <div class="seconds">
-                  <div class="value">00</div>
-                  <span>Seconds</span>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="right-content">
-            <div class="top-content">
-              <h6>Register your free account and <em>get immediate</em> access to online courses</h6>
-            </div>
-            <form id="contact" action="" method="get">
-              <div class="row">
-                <div class="col-md-12">
-                  <fieldset>
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-12">
-                  <fieldset>
-                    <button type="submit" id="form-submit" class="button">Get it now</button>
-                  </fieldset>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <section class="section courses" data-section="section4">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>Pu Course</h2>
+            <h2>Courses</h2>
           </div>
         </div>
         <div class="owl-carousel owl-theme">

@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="<?php echo base_url();?>/assets/dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition login-page">
+  
  <?php 
  if($this->session->flashdata('success')) { ?>
       <!-- <div class="success-div float-right">
@@ -101,6 +102,11 @@
 <!-- AdminLTE App -->
 <script src="<?php echo base_url();?>/assets/dist/js/adminlte.min.js"></script>
 </body>
+<script>
+   $(".danger-div").delay(2000).slideUp(200, function() {
+    $(this).alert('close');
+});
+</script>
 
 
 </html>

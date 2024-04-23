@@ -98,18 +98,18 @@
       
       <?php echo form_close(); ?>
 
-      <div class="social-auth-links text-center">
+      <!-- <div class="social-auth-links text-center">
         <p>- OR -</p>
         <a href="<?php echo site_url();?>Auth/mobile" class="btn btn-block btn-primary">
-          <!-- <i class="fab fa-facebook mr-2"></i> -->
+          <i class="fab fa-facebook mr-2"></i>
           <i class="fas fa-mobile-alt"></i>
           Sign up using Mobile
         </a>
-        <!-- <a href="#" class="btn btn-block btn-danger">
+        <a href="#" class="btn btn-block btn-danger">
           <i class="fab fa-google-plus mr-2"></i>
           Sign up using Google+
-        </a> -->
-      </div>
+        </a>
+      </div> -->
 
       <a href="<?php echo site_url();?>Auth/signin" class="text-center">Already have account? <b>Sign-in</b></a>
     </div>
@@ -124,5 +124,10 @@
 <script src="<?php echo base_url();?>/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<?php echo base_url();?>/assets/dist/js/adminlte.min.js"></script>
+<script>
+  $(".success-div").delay(2000).slideUp(200, function() {
+    $(this).alert('close');
+});
+</script>
 </body>
 </html>

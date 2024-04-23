@@ -7,6 +7,7 @@ class Auth extends CI_Controller {
             $this->load->model('auth_model');
             $this->load->helper('form');
             $this->load->library('form_validation','session');
+            // $this->load->logged_in();
            
 
         }
@@ -14,6 +15,7 @@ class Auth extends CI_Controller {
         {
         //   $this->load->view('home_page');
             $this->load->view('welcomehome');
+            
         
             }   
     
@@ -22,8 +24,22 @@ class Auth extends CI_Controller {
            $this->load->view('Auth/signin_view');
         }   
 
-        public function signin_form(){
-            $this->auth_model->signin_user();
+        public function signin_form()
+        {
+            if($this->input->post()){
+                $this->form_validation->set_rules('email','Email','required|valid_email');
+                $this->form_validation->set_rules('password','Password','required|valid_email');
+               
+                if($this->form_validation->run()== FALSE){
+                // echo "error";
+                echo validation_errors();
+                }
+                else{
+                    echo "success";
+
+                }
+            }  
+           $this->auth_model->signin_user();
         }
 
         public function signup()
@@ -38,6 +54,7 @@ class Auth extends CI_Controller {
           
 
             $this->auth_model->signup_user();
+              
         }
 
         public function user_dashboard()
@@ -52,5 +69,44 @@ class Auth extends CI_Controller {
             $this->auth_model->user_logout();
 
         }
-                    
+
+        
+
+        public function user_details()
+        {
+            // $this->auth_model->user_logout();
+
+            $this->load->view('Auth/header');
+            $this->load->view('auth/profile_show');
+            $this->load->view('Auth/footer');
+
+        }
+
+        public function edit_profile()
+        {
+            // $this->auth_model->user_logout();
+
+            $this->load->view('Auth/header');
+            $this->load->view('auth/edit_profile');
+            $this->load->view('Auth/footer');
+
+        }
+        public function updated_profile()
+        {
+            // $this->auth_model->user_logout();
+
+            $this->load->view('Auth/header');
+            $this->load->view('Auth/update_profile');
+            $this->load->view('Auth/footer');
+
+        }
+
+       
+        
     }  
+
+
+
+
+
+                    

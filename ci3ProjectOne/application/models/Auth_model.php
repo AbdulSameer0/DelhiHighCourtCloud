@@ -5,6 +5,7 @@ class Auth_model extends CI_Model {
         {
             parent::__construct();
             $this->load->model('Auth_model');
+            // $this->load->logged_in();
         }
     public function signup_user()
     {      
@@ -27,7 +28,7 @@ class Auth_model extends CI_Model {
                             'email'=>$this->input->post('email'),
                             'password'=>$password,
                                 );
-               $this->db->insert('singin_info',$data);
+               $this->db->insert('signinfo',$data);
                $this->session->set_flashdata('success', 'Signup Successfully!');
                redirect('Auth/signup');
            }
@@ -39,9 +40,11 @@ class Auth_model extends CI_Model {
     {      
         $email=$this->input->post('email');
         $password=$this->input->post('password');
+        $cpass=$this->input->post('cpass');
         $this->db->where('email',$email);
         $this->db->where('password',$password);
-        $query=$this->db->get('singin_info');
+        $this->db->where('cpass',$cpass);
+        $query=$this->db->get('signinfo');
         $find_user=$query->num_rows($query);
 
         if($find_user>0){
@@ -69,9 +72,15 @@ class Auth_model extends CI_Model {
      $this->session->sess_destroy();
 
      redirect('auth/signin','refresh');
+    }
+
+    
+    
+ 
+
 }
 
-    }
+   
     
            
     

@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -55,20 +55,42 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 /*---------- Admin Section routes ---------------------- */
-$route['home_view']='Admin/index';
-$route['home_view']='Admin/login';
-$route['home_view']='Admin/dashboard';
-$route['home_view']='Admin/logout';
+$route['home_view'] = 'Admin/index';
+$route['home_view'] = 'Admin/login';
+$route['home_view'] = 'Admin/dashboard';
+$route['home_view'] = 'Admin/logout';
+$route['home_view'] = 'Admin/category';
+$route['home_view'] = 'Admin/studentclasses';
+
+
+
 
 
 /*---------- User Section routes ---------------------- */
-$route['home_view']='Auth/index';
-$route['home_view']='Auth/signin';
-$route['home_view']='Auth/dashboard';
-$route['home_view']='Auth/logout';
+$route['home_view'] = 'Auth/index';
+$route['home_view'] = 'Auth/signin';
+$route['home_view'] = 'Auth/dashboard';
+$route['home_view'] = 'Auth/logout';
+$route['home_view'] = 'Auth/input_error';
+$route['home_view'] = 'Auth/user_details';
+
 
 /*---------- User Course Section routes ---------------------- */
-$route['course_view']='NewCourse/index';
+$route['course_view'] = 'NewCourse/index';
+
+
+/*---------- Fresh Addmission Section routes ---------------------- */
+$route['fresh_add'] = 'FreshAddmission/index';
+
+/*---------- All Courses Section routes ---------------------- */
+$route['allcourses'] = 'allcourses/index';
+
+/*---------- Virtuial Class Section routes ---------------------- */
+$route['virtualclass'] = 'VirtualClass/index';
+
+
+
+
 
 
 

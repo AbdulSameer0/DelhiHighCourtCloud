@@ -25,7 +25,7 @@
         ?>
 <?php
     if($this->session->flashdata('error')) { ?>
-        <div class="danger-div">
+        <div id="mywish" class="danger-div">
             <p class="alert alert-danger" role="alert">
             <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Invalid Email or Password!!</p>
         </div>
@@ -40,32 +40,38 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session!!</p>
       <p class="login-box-msg"></p>
+      <form method="POST" action="<?php echo base_url();?>Auth/signin_form">
       
       <?php echo validation_errors(); ?>
       <?php echo form_open('Auth/signin_form'); ?>
         <div class="input-group mb-3">
-          <input type="email" class="form-control" id="email" name="email" value="" placeholder="Email">
+          <input type="email" class="form-control" id="email" name="email" value="<?php echo set_value('email');?>" placeholder="Email" required="">
+          <?php echo form_error('email'); ?>          
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
             </div>
           </div>
         </div>
+        <p class="error" style="color:red;">Email is required.</p>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" id="password" name="password" value="" placeholder="Password">
+          <input type="password" class="form-control" id="password" name="password" value="<?php echo set_value('password');?>" placeholder="Password"required="">
+          <?php echo form_error('password'); ?>
+          
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
             </div>
           </div>
         </div>
+        <p class="error" style="color:red;">Password is required.</p>
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
               <input type="checkbox" id="remember">
-              <label for="remember">
+              <!-- <label for="remember">
                 Remember Me
-              </label>
+              </label> -->
             </div>
           </div>
           <!-- /.col -->
@@ -99,7 +105,7 @@
 </div>
 <?php echo form_close(); ?>
 <!-- /.login-box -->
-
+</form>
 <!-- jQuery -->
 <script src="<?php echo base_url();?>/assets/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
@@ -108,13 +114,9 @@
 <script src="<?php echo base_url();?>/assets/dist/js/adminlte.min.js"></script>
 </body>
 <script>
-  let sessionLifetime = 4 * 60 * 60;
-setTimeout(() => {
-   // an authenticated endpoint, could be anything, if request fail, then user is not logged in anymore
-   axios.get('/me').catch(e => {
-       window.location.replace("/signin");
-   })
-}, sessionLifetime * 1000);
+  $(".danger-div").delay(2000).slideUp(200, function() {
+    $(this).alert('close');
+});
 </script>
 
 
