@@ -14,8 +14,7 @@ class Admin extends CI_Controller
 
     public function viewAll()
     {
-        $this->load->model('admin_model');
-        $this->load->library('from_validation', 'session');
+       $this->load->model('admin_model');
     }
 
     public function index()

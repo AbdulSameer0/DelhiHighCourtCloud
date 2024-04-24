@@ -1,33 +1,84 @@
-<!-- <header class="fixed-bottom p-1 bg-dark text-white">
-<div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top fixed-bottom p-1 bg-dark text-white">
-    <div class="col-md-4 d-flex align-items-center">
-      
-      <span class="mb-3 mb-md-0 text-muted text-center">© 2024 Company, Inc</span>
-    </div>
+<footer style="position: fixed;
+    height: 75px;
+    bottom: 0;
+    width: 100%;">
+  <div class="container">
+    <div class="row" style="min-height:200%;display:flex;flex-direction:column;margin-top:auto;">
+      <div class="col-md-12">
+        <p><i class="fa fa-copyright"></i> Copyright © 2021. Delhi High Court. All Rights Reserved.
 
-    
-  </footer>
-</div>
-  </header> -->
+          Rouse Avenue Court Complex, Pandit Deen Dayal Upadhyaya Marg, Mandi House, New Delhi, Delhi 110002
 
-  <footer class="fixed-bottom p-1 bg-dark text-white">
-    <div class="container">
-      <div class="col-md-4 d-flex align-items-center">
-        <span class="mb-3 mb-md-0 text-muted text-center">© 2024 Company, Inc</span>
+          | Design: <a href="https://delhidistrictcourts.nic.in/" rel="sponsored" target="_blank">Delhi District
+            Court</a></p>
       </div>
     </div>
-  </footer>
-<!-- Optional JavaScript; choose one of the two! -->
+  </div>
+</footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src="<?php echo base_url(); ?>vendor/jquery/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-   </body>
+<script src="<?php echo base_url(); ?>assetshome/js/isotope.min.js"></script>
+<script src="<?php echo base_url(); ?>assetshome/js/owl-carousel.js"></script>
+<script src="<?php echo base_url(); ?>assetshome/js/lightbox.js"></script>
+<script src="<?php echo base_url(); ?>assetshome/js/tabs.js"></script>
+<script src="<?php echo base_url(); ?>assetshome/js/video.js"></script>
+<script src="<?php echo base_url(); ?>assetshome/js/slick-slider.js"></script>
+<script src="<?php echo base_url(); ?>assetshome/js/custom.js"></script>
+<script>
+  //according to loftblog tut
+  $('.nav li:first').addClass('active');
+
+  var showSection = function showSection(section, isAnimate) {
+    var
+      direction = section.replace(/#/, ''),
+      reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+      reqSectionPos = reqSection.offset().top - 0;
+
+    if (isAnimate) {
+      $('body, html').animate({
+        scrollTop: reqSectionPos
+      },
+        800);
+    } else {
+      $('body, html').scrollTop(reqSectionPos);
+    }
+
+  };
+
+  var checkSection = function checkSection() {
+    $('.section').each(function () {
+      var
+        $this = $(this),
+        topEdge = $this.offset().top - 80,
+        bottomEdge = topEdge + $this.height(),
+        wScroll = $(window).scrollTop();
+      if (topEdge < wScroll && bottomEdge > wScroll) {
+        var
+          currentId = $this.data('section'),
+          reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+        reqLink.closest('li').addClass('active').
+          siblings().removeClass('active');
+      }
+    });
+  };
+
+  $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+    if ($(e.target).hasClass('external')) {
+      return;
+    }
+    e.preventDefault();
+    $('#menu').removeClass('active');
+    showSection($(this).attr('href'), true);
+  });
+
+  $(window).scroll(function () {
+    checkSection();
+  });
+</script>
+</body>
+
 </html>

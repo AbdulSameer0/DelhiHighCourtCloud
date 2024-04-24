@@ -1,39 +1,5 @@
-
-<title>Grad School HTML5 Template</title>
-
-<!-- Bootstrap core CSS -->
-<link href="<?php echo base_url(); ?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Additional CSS Files -->
-<link rel="stylesheet" href="<?php echo base_url(); ?>assetshome/css/fontawesome.css">
-<link rel="stylesheet" href="<?php echo base_url(); ?>assetshome/css/templatemo-grad-school.css">
-<!-- <link rel="stylesheet" href="<?php echo base_url(); ?>assetshome/css/owl.css">-->
-<link rel="stylesheet" href="<?php echo base_url(); ?>assetshome/css/lightbox.css">
-<header class="main-header clearfix" role="header">
-    <div class="logo">
-      <a href="#"><em>Grad</em>.</a>
-    </div>
-    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
-    <nav id="menu" class="main-nav" role="navigation">
-      <ul class="main-menu">
-        <li><a href="#section1">Home</a></li>
-        <li class="has-submenu"><a href="#section2">About Us</a>
-          <ul class="sub-menu">
-            <li><a href="#section2">Who we are?</a></li>
-            <li><a href="#section3">What we do?</a></li>
-            <li><a href="#section3">How it works?</a></li>
-            <li><a href="#section4" rel="sponsored" class="external">External URL</a></li>
-          </ul>
-        </li>
-        <li><a href="#section4">Courses</a></li>
-        <!-- <li><a href="#section5">Video</a></li> -->
-        <li><a href="#section6">Contact</a></li>
-        <li><a href="#" class="external">External</a></li>
-      </ul>
-    </nav>
-  </header>
-
-<!-- //;;;;;;;;;;;;; -->
+<title>All Courses</title>
+<?php $this->load->view("includes/header"); ?>
 <section class="section courses" data-section="section4">
     <div class="container-fluid">
         <div class="row">
@@ -212,15 +178,14 @@
                     <h4>Watch the video to learn more <em>about Grad School</em></h4>
                     <p>You are NOT allowed to redistribute this template ZIP file on any template collection website.
                         However, you can use this template to convert into a specific theme for any kind of CMS platform
-                        such as WordPress. You may <a rel="nofollow" href="#"
-                            target="_parent">contact TemplateMo</a> for details.
+                        such as WordPress. You may <a rel="nofollow" href="#" target="_parent">contact TemplateMo</a>
+                        for details.
                         <br><br>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum
                         quam felis non ante.
                     </p>
-                    <div><a href="<?php echo base_url();?>AllCourses/index"
-                          >Courses URL</a></div>
+                    <div><a href="<?php echo base_url(); ?>AllCourses/index">Courses URL</a></div>
 
-                       
+
                 </div>
             </div>
             <div class="col-md-6">
@@ -290,3 +255,4 @@
         </div>
     </div>
 </section>
+<?php $this->load->view("includes/footer"); ?>
