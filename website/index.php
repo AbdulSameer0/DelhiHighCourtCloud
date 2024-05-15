@@ -13,15 +13,24 @@
 
 <body>
     <form action="" method="post">
-        <h3>Add Tenders</h3>
-        <label>Enter your Subject</label>
+        <h3>Add Details</h3>
+        <div class="mb-3">
+            <select class="form-select" name="type" aria-label="Default select example">
+                <option selected>Select</option>
+                <option value="1">Tenders</option>
+                <option value="2">Circulars</option>
+                <option value="3">Online RTI</option>
+                <option value="4">Recruitments</option>
+            </select>
+        </div>
         <input type="title" name="title" value="">
 
         <label>Enter a Date</label>
         <input type="date" name="date" value="">
 
         <label for="formFileMultiple" class="form-label"></label>
-        <input class="form-control" type="file_name" id="formFileMultiple" name="f1" multiple>
+        <input type="file" class="form-control" id="formFileMultiple" name="f1" multiple>
+
 
         <input type="submit" name="submit" value="Send message">
 

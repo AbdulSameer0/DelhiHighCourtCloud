@@ -1,51 +1,70 @@
-<?php 
-	// First of all we have to check if the form is submitted via the POST
-	// method.
-	if(isset($_POST['submit'])){
-		// If the form is submitted we are gonna create a new associative array
-		// to hold the values we will store.
-		$new_message = array(
-			"title" => $_POST['title'],
-			"date" => $_POST['date'],
-			"file_name" => $_POST['f1'],
-	
-			
-		);
-		// print_r($new_message);  die;
+<?php
+function reformatDate($date, $from_format = 'Y-m-d', $to_format = 'd-m-Y')
+{
+	$date_obj = DateTime::createFromFormat($from_format, $date);
+	return $date_obj->format($to_format);
+}
 
-		
-		// Before storing the $new_message[] array, we have to check if this is 
-		// the first record.
-		// We are doing this by checking the filesize.
-		if(filesize("messages.json") == 0){
-			// if this is the first record, we creating an array to hold out message.
-			$first_record = array($new_message);
-			// The only purpose of this step is to create an array inside the json 
-			// file to hold our messages. You will see in sec.
-			
-			/* I'll assign the record to a generic variable for later use. */
-			$data_to_save = $first_record; 
-		}else{
-			// If this is not the first record, and there are messages stored in the file.
-			// We have to pull all those old messages so we can add the new one.
-			// And also we have to decode the data we fetch.
-			$old_records = json_decode(file_get_contents("messages.json"));
+// Generate link code here
+function generateLink($date, $type)
+{
+	$date_obj = DateTime::createFromFormat('Y-m-d', $date);
+	$year = $date_obj->format('Y');
+	$month = $date_obj->format('m');
 
-			// We know that all of our messages are stored inside an array,
-			// because we created that array with the first record.
-			// Now we can add to that array our new message.
-			array_push($old_records, $new_message);
-
-			/* and i'll assign the record to our generic variable. */
-			$data_to_save = $old_records;
-		}
-
-		// Now our last step is to store the data to the file (messages.json).
-		if(!file_put_contents("messages.json", json_encode($data_to_save, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE), LOCK_EX)){
-			// if something went wrong, we are showing an error message.
-			$error = "Error storing message, please try again";
-		}else{
-			// and if everything went ok, we show a success message.
-			$success =  "Message is stored successfully";
-		}
+	switch ($type) {
+		case '1': // Tenders
+			return "public/Tenders/$year/$month";
+		case '2': // Circulars
+			return "public/Circulars/$year/$month";
+		case '3': // Online RTI
+			return "public/RTI/$year/$month";
+		case '4': //Recruitment
+			return "public/Recruitment/$year/$month";
+		// Add more cases for other types if needed
 	}
+}
+
+// Determine the correct JSON file based on the type
+function getJsonFilePath($type)
+{
+	switch ($type) {
+		case '1':
+			return "uploads/json/tenders.json";
+		case '2':
+			return "uploads/json/circulars.json";
+		case '3':
+			return "uploads/json/rti.json";
+		case '4':
+			return "uploads/json/recruitment.json";
+		// Add more cases for other types if needed
+	}
+}
+
+if (isset($_POST['submit'])) {
+	$type = $_POST['type']; // Assuming you have a name="type" attribute in your select element
+	$jsonFilePath = getJsonFilePath($type);
+
+	$new_message = array(
+		"title" => $_POST['title'],
+		"date" => reformatDate($_POST['date']), // Reformat the date
+		"link" => generateLink($_POST['date'], $type), // Generate the link
+		"file_name" => $_POST['f1']
+	);
+
+	if (filesize($jsonFilePath) == 0) {
+		$data_to_save = array($new_message);
+	} else {
+		$old_records = json_decode(file_get_contents($jsonFilePath), true);
+		array_unshift($old_records, $new_message); // Prepend new message to the beginning
+		$data_to_save = $old_records;
+	}
+
+	// Use JSON_UNESCAPED_SLASHES to prevent escaping slashes
+	if (!file_put_contents($jsonFilePath, json_encode($data_to_save, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES), LOCK_EX)) {
+		$error = "Error storing message, please try again";
+	} else {
+		$success = "Message is stored successfully";
+	}
+}
+?>
