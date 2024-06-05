@@ -1,0 +1,171 @@
+DEBUG - 2024-05-18 11:20:03 --> UTF-8 Support Enabled
+DEBUG - 2024-05-18 11:20:03 --> No URI present. Default controller set.
+DEBUG - 2024-05-18 11:20:03 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-18 11:20:03 --> Config file loaded: C:\xampp\htdocs\layersweb\application\config/layers_constants.php
+DEBUG - 2024-05-18 11:20:03 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2024-05-18 11:20:03 --> Auth MX_Controller Initialized
+DEBUG - 2024-05-18 11:20:03 --> File loaded: C:\xampp\htdocs\layersweb\application\controllers/../modules/template/controllers/Template.php
+DEBUG - 2024-05-18 11:20:03 --> Template MX_Controller Initialized
+DEBUG - 2024-05-18 11:20:03 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/header_v.php
+DEBUG - 2024-05-18 11:20:03 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/auth/views/login_view.php
+DEBUG - 2024-05-18 11:20:03 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/footer_script_v.php
+DEBUG - 2024-05-18 11:20:03 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/html_login_page_v.php
+DEBUG - 2024-05-18 11:20:03 --> Total execution time: 0.0531
+DEBUG - 2024-05-18 11:21:48 --> UTF-8 Support Enabled
+DEBUG - 2024-05-18 11:21:48 --> No URI present. Default controller set.
+DEBUG - 2024-05-18 11:21:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-18 11:21:48 --> Config file loaded: C:\xampp\htdocs\layersweb\application\config/layers_constants.php
+DEBUG - 2024-05-18 11:21:48 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2024-05-18 11:21:48 --> Auth MX_Controller Initialized
+DEBUG - 2024-05-18 11:21:48 --> File loaded: C:\xampp\htdocs\layersweb\application\controllers/../modules/template/controllers/Template.php
+DEBUG - 2024-05-18 11:21:48 --> Template MX_Controller Initialized
+ERROR - 2024-05-18 11:21:48 --> ----------LAYERS--USER-DEBUG STARTS HERE-----------
+ERROR - 2024-05-18 11:21:48 --> --------------------------------------------------
+ERROR - 2024-05-18 11:21:48 --> http://localhost/ddc-rest-api/website/auth/login
+ERROR - 2024-05-18 11:21:48 --> ["Content-Type: application\/json","Auth-Key: layersapi","Client-Service:frontend-mobile-client","Authorization:"]
+ERROR - 2024-05-18 11:21:48 --> {"reqname":"generatetoken","reqsrc":"web","param":{"mobile":"9685981869","passwd":"d76d8c5e39f4996926de80737d89917eca016f6e5cbe9e778962d5d2c60f4997","salt":"ujmxloz"}}
+ERROR - 2024-05-18 11:21:48 --> "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Database Error<\/title>\n<style type=\"text\/css\">\n\n::selection { background-color: #E13300; color: white; }\n::-moz-selection { background-color: #E13300; color: white; }\n\nbody {\n\tbackground-color: #fff;\n\tmargin: 40px;\n\tfont: 13px\/20px normal Helvetica, Arial, sans-serif;\n\tcolor: #4F5155;\n}\n\na {\n\tcolor: #003399;\n\tbackground-color: transparent;\n\tfont-weight: normal;\n}\n\nh1 {\n\tcolor: #444;\n\tbackground-color: transparent;\n\tborder-bottom: 1px solid #D0D0D0;\n\tfont-size: 19px;\n\tfont-weight: normal;\n\tmargin: 0 0 14px 0;\n\tpadding: 14px 15px 10px 15px;\n}\n\ncode {\n\tfont-family: Consolas, Monaco, Courier New, Courier, monospace;\n\tfont-size: 12px;\n\tbackground-color: #f9f9f9;\n\tborder: 1px solid #D0D0D0;\n\tcolor: #002166;\n\tdisplay: block;\n\tmargin: 14px 0 14px 0;\n\tpadding: 12px 10px 12px 10px;\n}\n\n#container {\n\tmargin: 10px;\n\tborder: 1px solid #D0D0D0;\n\tbox-shadow: 0 0 8px #D0D0D0;\n}\n\np {\n\tmargin: 12px 15px 12px 15px;\n}\n<\/style>\n<\/head>\n<body>\n\t<div id=\"container\">\n\t\t<h1>A Database Error Occurred<\/h1>\n\t\t<p>could not find driver<\/p><p>Filename: C:\/xampp\/htdocs\/ddc-rest-api\/system\/database\/drivers\/pdo\/pdo_driver.php<\/p><p>Line Number: 142<\/p>\t<\/div>\n<\/body>\n<\/html>"
+ERROR - 2024-05-18 11:21:48 --> --------------------------------------------------
+ERROR - 2024-05-18 11:21:48 --> ----------LAYERS--USER-DEBUG ENDS HERE-------------
+ERROR - 2024-05-18 11:21:48 --> Severity: Notice --> Trying to get property 'status' of non-object C:\xampp\htdocs\layersweb\application\modules\auth\controllers\Auth.php 47
+ERROR - 2024-05-18 11:21:48 --> Severity: Notice --> Trying to get property 'message' of non-object C:\xampp\htdocs\layersweb\application\modules\auth\controllers\Auth.php 67
+DEBUG - 2024-05-18 11:21:48 --> UTF-8 Support Enabled
+DEBUG - 2024-05-18 11:21:48 --> No URI present. Default controller set.
+DEBUG - 2024-05-18 11:21:48 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-18 11:21:48 --> Config file loaded: C:\xampp\htdocs\layersweb\application\config/layers_constants.php
+DEBUG - 2024-05-18 11:21:48 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2024-05-18 11:21:48 --> Auth MX_Controller Initialized
+DEBUG - 2024-05-18 11:21:48 --> File loaded: C:\xampp\htdocs\layersweb\application\controllers/../modules/template/controllers/Template.php
+DEBUG - 2024-05-18 11:21:48 --> Template MX_Controller Initialized
+DEBUG - 2024-05-18 11:21:48 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/header_v.php
+DEBUG - 2024-05-18 11:21:48 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/auth/views/login_view.php
+DEBUG - 2024-05-18 11:21:48 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/footer_script_v.php
+DEBUG - 2024-05-18 11:21:48 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/html_login_page_v.php
+DEBUG - 2024-05-18 11:21:48 --> Total execution time: 0.0262
+DEBUG - 2024-05-18 11:23:26 --> UTF-8 Support Enabled
+DEBUG - 2024-05-18 11:23:26 --> No URI present. Default controller set.
+DEBUG - 2024-05-18 11:23:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-18 11:23:26 --> Config file loaded: C:\xampp\htdocs\layersweb\application\config/layers_constants.php
+DEBUG - 2024-05-18 11:23:26 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2024-05-18 11:23:26 --> Auth MX_Controller Initialized
+DEBUG - 2024-05-18 11:23:26 --> File loaded: C:\xampp\htdocs\layersweb\application\controllers/../modules/template/controllers/Template.php
+DEBUG - 2024-05-18 11:23:26 --> Template MX_Controller Initialized
+ERROR - 2024-05-18 11:23:26 --> ----------LAYERS--USER-DEBUG STARTS HERE-----------
+ERROR - 2024-05-18 11:23:26 --> --------------------------------------------------
+ERROR - 2024-05-18 11:23:26 --> http://localhost/ddc-rest-api/website/auth/login
+ERROR - 2024-05-18 11:23:26 --> ["Content-Type: application\/json","Auth-Key: layersapi","Client-Service:frontend-mobile-client","Authorization:"]
+ERROR - 2024-05-18 11:23:26 --> {"reqname":"generatetoken","reqsrc":"web","param":{"mobile":"8860085584","passwd":"0cd5e25b8271073bebc0046e79de39036c3940921591c149b77dc631be7a755a","salt":"obuuozk"}}
+ERROR - 2024-05-18 11:23:26 --> "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Database Error<\/title>\n<style type=\"text\/css\">\n\n::selection { background-color: #E13300; color: white; }\n::-moz-selection { background-color: #E13300; color: white; }\n\nbody {\n\tbackground-color: #fff;\n\tmargin: 40px;\n\tfont: 13px\/20px normal Helvetica, Arial, sans-serif;\n\tcolor: #4F5155;\n}\n\na {\n\tcolor: #003399;\n\tbackground-color: transparent;\n\tfont-weight: normal;\n}\n\nh1 {\n\tcolor: #444;\n\tbackground-color: transparent;\n\tborder-bottom: 1px solid #D0D0D0;\n\tfont-size: 19px;\n\tfont-weight: normal;\n\tmargin: 0 0 14px 0;\n\tpadding: 14px 15px 10px 15px;\n}\n\ncode {\n\tfont-family: Consolas, Monaco, Courier New, Courier, monospace;\n\tfont-size: 12px;\n\tbackground-color: #f9f9f9;\n\tborder: 1px solid #D0D0D0;\n\tcolor: #002166;\n\tdisplay: block;\n\tmargin: 14px 0 14px 0;\n\tpadding: 12px 10px 12px 10px;\n}\n\n#container {\n\tmargin: 10px;\n\tborder: 1px solid #D0D0D0;\n\tbox-shadow: 0 0 8px #D0D0D0;\n}\n\np {\n\tmargin: 12px 15px 12px 15px;\n}\n<\/style>\n<\/head>\n<body>\n\t<div id=\"container\">\n\t\t<h1>A Database Error Occurred<\/h1>\n\t\t<p>could not find driver<\/p><p>Filename: C:\/xampp\/htdocs\/ddc-rest-api\/system\/database\/drivers\/pdo\/pdo_driver.php<\/p><p>Line Number: 142<\/p>\t<\/div>\n<\/body>\n<\/html>"
+ERROR - 2024-05-18 11:23:26 --> --------------------------------------------------
+ERROR - 2024-05-18 11:23:26 --> ----------LAYERS--USER-DEBUG ENDS HERE-------------
+ERROR - 2024-05-18 11:23:26 --> Severity: Notice --> Trying to get property 'status' of non-object C:\xampp\htdocs\layersweb\application\modules\auth\controllers\Auth.php 47
+ERROR - 2024-05-18 11:23:26 --> Severity: Notice --> Trying to get property 'message' of non-object C:\xampp\htdocs\layersweb\application\modules\auth\controllers\Auth.php 67
+DEBUG - 2024-05-18 11:23:26 --> UTF-8 Support Enabled
+DEBUG - 2024-05-18 11:23:26 --> No URI present. Default controller set.
+DEBUG - 2024-05-18 11:23:26 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-18 11:23:26 --> Config file loaded: C:\xampp\htdocs\layersweb\application\config/layers_constants.php
+DEBUG - 2024-05-18 11:23:26 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2024-05-18 11:23:26 --> Auth MX_Controller Initialized
+DEBUG - 2024-05-18 11:23:26 --> File loaded: C:\xampp\htdocs\layersweb\application\controllers/../modules/template/controllers/Template.php
+DEBUG - 2024-05-18 11:23:26 --> Template MX_Controller Initialized
+DEBUG - 2024-05-18 11:23:26 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/header_v.php
+DEBUG - 2024-05-18 11:23:26 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/auth/views/login_view.php
+DEBUG - 2024-05-18 11:23:26 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/footer_script_v.php
+DEBUG - 2024-05-18 11:23:26 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/html_login_page_v.php
+DEBUG - 2024-05-18 11:23:26 --> Total execution time: 0.0207
+DEBUG - 2024-05-18 11:24:35 --> UTF-8 Support Enabled
+DEBUG - 2024-05-18 11:24:35 --> No URI present. Default controller set.
+DEBUG - 2024-05-18 11:24:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-18 11:24:35 --> Config file loaded: C:\xampp\htdocs\layersweb\application\config/layers_constants.php
+DEBUG - 2024-05-18 11:24:35 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2024-05-18 11:24:35 --> Auth MX_Controller Initialized
+DEBUG - 2024-05-18 11:24:35 --> File loaded: C:\xampp\htdocs\layersweb\application\controllers/../modules/template/controllers/Template.php
+DEBUG - 2024-05-18 11:24:35 --> Template MX_Controller Initialized
+DEBUG - 2024-05-18 11:24:35 --> UTF-8 Support Enabled
+DEBUG - 2024-05-18 11:24:35 --> No URI present. Default controller set.
+DEBUG - 2024-05-18 11:24:35 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-18 11:24:35 --> Config file loaded: C:\xampp\htdocs\layersweb\application\config/layers_constants.php
+DEBUG - 2024-05-18 11:24:35 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2024-05-18 11:24:35 --> Auth MX_Controller Initialized
+DEBUG - 2024-05-18 11:24:35 --> File loaded: C:\xampp\htdocs\layersweb\application\controllers/../modules/template/controllers/Template.php
+DEBUG - 2024-05-18 11:24:35 --> Template MX_Controller Initialized
+DEBUG - 2024-05-18 11:24:35 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/header_v.php
+DEBUG - 2024-05-18 11:24:35 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/auth/views/login_view.php
+DEBUG - 2024-05-18 11:24:35 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/footer_script_v.php
+DEBUG - 2024-05-18 11:24:35 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/html_login_page_v.php
+DEBUG - 2024-05-18 11:24:35 --> Total execution time: 0.0222
+DEBUG - 2024-05-18 11:25:05 --> UTF-8 Support Enabled
+DEBUG - 2024-05-18 11:25:05 --> No URI present. Default controller set.
+DEBUG - 2024-05-18 11:25:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-18 11:25:05 --> Config file loaded: C:\xampp\htdocs\layersweb\application\config/layers_constants.php
+DEBUG - 2024-05-18 11:25:05 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2024-05-18 11:25:05 --> Auth MX_Controller Initialized
+DEBUG - 2024-05-18 11:25:05 --> File loaded: C:\xampp\htdocs\layersweb\application\controllers/../modules/template/controllers/Template.php
+DEBUG - 2024-05-18 11:25:05 --> Template MX_Controller Initialized
+ERROR - 2024-05-18 11:25:05 --> ----------LAYERS--USER-DEBUG STARTS HERE-----------
+ERROR - 2024-05-18 11:25:05 --> --------------------------------------------------
+ERROR - 2024-05-18 11:25:05 --> http://localhost/ddc-rest-api/website/auth/login
+ERROR - 2024-05-18 11:25:05 --> ["Content-Type: application\/json","Auth-Key: layersapi","Client-Service:frontend-mobile-client","Authorization:"]
+ERROR - 2024-05-18 11:25:05 --> {"reqname":"generatetoken","reqsrc":"web","param":{"mobile":"8860085584","passwd":"8c920d85c832bb9c82bcc6dc0187a14e00b35fc20fe3442952c364e97673b85c","salt":"vndfjjs"}}
+ERROR - 2024-05-18 11:25:05 --> "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Database Error<\/title>\n<style type=\"text\/css\">\n\n::selection { background-color: #E13300; color: white; }\n::-moz-selection { background-color: #E13300; color: white; }\n\nbody {\n\tbackground-color: #fff;\n\tmargin: 40px;\n\tfont: 13px\/20px normal Helvetica, Arial, sans-serif;\n\tcolor: #4F5155;\n}\n\na {\n\tcolor: #003399;\n\tbackground-color: transparent;\n\tfont-weight: normal;\n}\n\nh1 {\n\tcolor: #444;\n\tbackground-color: transparent;\n\tborder-bottom: 1px solid #D0D0D0;\n\tfont-size: 19px;\n\tfont-weight: normal;\n\tmargin: 0 0 14px 0;\n\tpadding: 14px 15px 10px 15px;\n}\n\ncode {\n\tfont-family: Consolas, Monaco, Courier New, Courier, monospace;\n\tfont-size: 12px;\n\tbackground-color: #f9f9f9;\n\tborder: 1px solid #D0D0D0;\n\tcolor: #002166;\n\tdisplay: block;\n\tmargin: 14px 0 14px 0;\n\tpadding: 12px 10px 12px 10px;\n}\n\n#container {\n\tmargin: 10px;\n\tborder: 1px solid #D0D0D0;\n\tbox-shadow: 0 0 8px #D0D0D0;\n}\n\np {\n\tmargin: 12px 15px 12px 15px;\n}\n<\/style>\n<\/head>\n<body>\n\t<div id=\"container\">\n\t\t<h1>A Database Error Occurred<\/h1>\n\t\t<p>could not find driver<\/p><p>Filename: C:\/xampp\/htdocs\/ddc-rest-api\/system\/database\/drivers\/pdo\/pdo_driver.php<\/p><p>Line Number: 142<\/p>\t<\/div>\n<\/body>\n<\/html>"
+ERROR - 2024-05-18 11:25:05 --> --------------------------------------------------
+ERROR - 2024-05-18 11:25:05 --> ----------LAYERS--USER-DEBUG ENDS HERE-------------
+ERROR - 2024-05-18 11:25:05 --> Severity: Notice --> Trying to get property 'status' of non-object C:\xampp\htdocs\layersweb\application\modules\auth\controllers\Auth.php 47
+ERROR - 2024-05-18 11:25:05 --> Severity: Notice --> Trying to get property 'message' of non-object C:\xampp\htdocs\layersweb\application\modules\auth\controllers\Auth.php 67
+DEBUG - 2024-05-18 11:25:05 --> UTF-8 Support Enabled
+DEBUG - 2024-05-18 11:25:05 --> No URI present. Default controller set.
+DEBUG - 2024-05-18 11:25:05 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-18 11:25:05 --> Config file loaded: C:\xampp\htdocs\layersweb\application\config/layers_constants.php
+DEBUG - 2024-05-18 11:25:05 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2024-05-18 11:25:05 --> Auth MX_Controller Initialized
+DEBUG - 2024-05-18 11:25:05 --> File loaded: C:\xampp\htdocs\layersweb\application\controllers/../modules/template/controllers/Template.php
+DEBUG - 2024-05-18 11:25:05 --> Template MX_Controller Initialized
+DEBUG - 2024-05-18 11:25:05 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/header_v.php
+DEBUG - 2024-05-18 11:25:05 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/auth/views/login_view.php
+DEBUG - 2024-05-18 11:25:05 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/footer_script_v.php
+DEBUG - 2024-05-18 11:25:05 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/html_login_page_v.php
+DEBUG - 2024-05-18 11:25:05 --> Total execution time: 0.0205
+DEBUG - 2024-05-18 12:04:34 --> UTF-8 Support Enabled
+DEBUG - 2024-05-18 12:04:34 --> No URI present. Default controller set.
+DEBUG - 2024-05-18 12:04:34 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-18 12:04:34 --> Config file loaded: C:\xampp\htdocs\layersweb\application\config/layers_constants.php
+DEBUG - 2024-05-18 12:04:34 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2024-05-18 12:04:34 --> Auth MX_Controller Initialized
+DEBUG - 2024-05-18 12:04:34 --> File loaded: C:\xampp\htdocs\layersweb\application\controllers/../modules/template/controllers/Template.php
+DEBUG - 2024-05-18 12:04:34 --> Template MX_Controller Initialized
+ERROR - 2024-05-18 12:04:34 --> ----------LAYERS--USER-DEBUG STARTS HERE-----------
+ERROR - 2024-05-18 12:04:34 --> --------------------------------------------------
+ERROR - 2024-05-18 12:04:34 --> http://localhost/ddc-rest-api/website/auth/login
+ERROR - 2024-05-18 12:04:34 --> ["Content-Type: application\/json","Auth-Key: layersapi","Client-Service:frontend-mobile-client","Authorization:"]
+ERROR - 2024-05-18 12:04:34 --> {"reqname":"generatetoken","reqsrc":"web","param":{"mobile":"9999375858","passwd":"341f86e28c9c59592cecb496ea182c6a268e1b3d0a2516b0348224faa40c7a8f","salt":"eutvrds"}}
+ERROR - 2024-05-18 12:04:34 --> "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Database Error<\/title>\n<style type=\"text\/css\">\n\n::selection { background-color: #E13300; color: white; }\n::-moz-selection { background-color: #E13300; color: white; }\n\nbody {\n\tbackground-color: #fff;\n\tmargin: 40px;\n\tfont: 13px\/20px normal Helvetica, Arial, sans-serif;\n\tcolor: #4F5155;\n}\n\na {\n\tcolor: #003399;\n\tbackground-color: transparent;\n\tfont-weight: normal;\n}\n\nh1 {\n\tcolor: #444;\n\tbackground-color: transparent;\n\tborder-bottom: 1px solid #D0D0D0;\n\tfont-size: 19px;\n\tfont-weight: normal;\n\tmargin: 0 0 14px 0;\n\tpadding: 14px 15px 10px 15px;\n}\n\ncode {\n\tfont-family: Consolas, Monaco, Courier New, Courier, monospace;\n\tfont-size: 12px;\n\tbackground-color: #f9f9f9;\n\tborder: 1px solid #D0D0D0;\n\tcolor: #002166;\n\tdisplay: block;\n\tmargin: 14px 0 14px 0;\n\tpadding: 12px 10px 12px 10px;\n}\n\n#container {\n\tmargin: 10px;\n\tborder: 1px solid #D0D0D0;\n\tbox-shadow: 0 0 8px #D0D0D0;\n}\n\np {\n\tmargin: 12px 15px 12px 15px;\n}\n<\/style>\n<\/head>\n<body>\n\t<div id=\"container\">\n\t\t<h1>A Database Error Occurred<\/h1>\n\t\t<p>could not find driver<\/p><p>Filename: C:\/xampp\/htdocs\/ddc-rest-api\/system\/database\/drivers\/pdo\/pdo_driver.php<\/p><p>Line Number: 142<\/p>\t<\/div>\n<\/body>\n<\/html>"
+ERROR - 2024-05-18 12:04:34 --> --------------------------------------------------
+ERROR - 2024-05-18 12:04:34 --> ----------LAYERS--USER-DEBUG ENDS HERE-------------
+ERROR - 2024-05-18 12:04:34 --> Severity: Notice --> Trying to get property 'status' of non-object C:\xampp\htdocs\layersweb\application\modules\auth\controllers\Auth.php 47
+ERROR - 2024-05-18 12:04:34 --> Severity: Notice --> Trying to get property 'message' of non-object C:\xampp\htdocs\layersweb\application\modules\auth\controllers\Auth.php 67
+DEBUG - 2024-05-18 12:04:34 --> UTF-8 Support Enabled
+DEBUG - 2024-05-18 12:04:34 --> No URI present. Default controller set.
+DEBUG - 2024-05-18 12:04:34 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-18 12:04:34 --> Config file loaded: C:\xampp\htdocs\layersweb\application\config/layers_constants.php
+DEBUG - 2024-05-18 12:04:34 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2024-05-18 12:04:34 --> Auth MX_Controller Initialized
+DEBUG - 2024-05-18 12:04:34 --> File loaded: C:\xampp\htdocs\layersweb\application\controllers/../modules/template/controllers/Template.php
+DEBUG - 2024-05-18 12:04:34 --> Template MX_Controller Initialized
+DEBUG - 2024-05-18 12:04:34 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/header_v.php
+DEBUG - 2024-05-18 12:04:34 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/auth/views/login_view.php
+DEBUG - 2024-05-18 12:04:34 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/footer_script_v.php
+DEBUG - 2024-05-18 12:04:34 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/html_login_page_v.php
+DEBUG - 2024-05-18 12:04:34 --> Total execution time: 0.0263
+DEBUG - 2024-05-18 12:53:18 --> UTF-8 Support Enabled
+DEBUG - 2024-05-18 12:53:18 --> No URI present. Default controller set.
+DEBUG - 2024-05-18 12:53:18 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-18 12:53:18 --> Config file loaded: C:\xampp\htdocs\layersweb\application\config/layers_constants.php
+DEBUG - 2024-05-18 12:53:18 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2024-05-18 12:53:18 --> Auth MX_Controller Initialized
+DEBUG - 2024-05-18 12:53:18 --> File loaded: C:\xampp\htdocs\layersweb\application\controllers/../modules/template/controllers/Template.php
+DEBUG - 2024-05-18 12:53:18 --> Template MX_Controller Initialized
+DEBUG - 2024-05-18 12:53:18 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/header_v.php
+DEBUG - 2024-05-18 12:53:18 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/auth/views/login_view.php
+DEBUG - 2024-05-18 12:53:18 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/footer_script_v.php
+DEBUG - 2024-05-18 12:53:18 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/html_login_page_v.php
+DEBUG - 2024-05-18 12:53:18 --> Total execution time: 0.0636

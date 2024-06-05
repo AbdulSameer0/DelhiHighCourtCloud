@@ -1,0 +1,13 @@
+DEBUG - 2024-05-20 07:51:13 --> UTF-8 Support Enabled
+DEBUG - 2024-05-20 07:51:13 --> No URI present. Default controller set.
+DEBUG - 2024-05-20 07:51:13 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2024-05-20 07:51:13 --> Config file loaded: C:\xampp\htdocs\layersweb\application\config/layers_constants.php
+DEBUG - 2024-05-20 07:51:13 --> Encryption: Auto-configured driver 'openssl'.
+DEBUG - 2024-05-20 07:51:13 --> Auth MX_Controller Initialized
+DEBUG - 2024-05-20 07:51:13 --> File loaded: C:\xampp\htdocs\layersweb\application\controllers/../modules/template/controllers/Template.php
+DEBUG - 2024-05-20 07:51:13 --> Template MX_Controller Initialized
+DEBUG - 2024-05-20 07:51:13 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/header_v.php
+DEBUG - 2024-05-20 07:51:13 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/auth/views/login_view.php
+DEBUG - 2024-05-20 07:51:13 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/footer_script_v.php
+DEBUG - 2024-05-20 07:51:13 --> File loaded: C:\xampp\htdocs\layersweb\application\modules/template/views/html_login_page_v.php
+DEBUG - 2024-05-20 07:51:13 --> Total execution time: 0.0631
